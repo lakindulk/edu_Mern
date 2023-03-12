@@ -28,28 +28,29 @@ class SideNavBar extends React.Component {
             this.setState({ isVisible: !this.state.isVisible });
           }}
         />
-     
+
         <SideNav.Nav defaultSelected="home">
-        <div>
-                            <img src="https://res.cloudinary.com/iplus/image/upload/v1678534187/test/logo_gxle55.png" alt='logo' style={{ width: '200px' , alignItems : "center"}} />
-                        </div>
-          
+          <div>
+            <img src="https://res.cloudinary.com/iplus/image/upload/v1678534187/test/logo_gxle55.png" alt='logo' style={{ width: '200px', alignItems: "center" }} />
+          </div>
 
-
-          <NavItem eventKey="home">
+          <NavItem eventKey="Dashboard">
             <NavIcon>
               <i className="fa fa-fw fa-home" style={{ fontSize: "1.75em" }} />
             </NavIcon>
-            <NavText>Home</NavText>
+            <NavText>Dashboard</NavText>
           </NavItem>
-          <NavItem eventKey="placed orders">
+
+          <NavItem eventKey="My Profile">
             <NavIcon>
-              <i
-                className="fa fa-fw fa-line-chart"
-                style={{ fontSize: "1.75em" }}
-              />
             </NavIcon>
-            <NavText>placed orders</NavText>
+            <NavText>My Profile</NavText>
+          </NavItem>
+
+          <NavItem eventKey="Exam Paper">
+            <NavIcon>
+            </NavIcon>
+            <NavText>Exam Paper</NavText>
           </NavItem>
         </SideNav.Nav>
       </SideNav>
